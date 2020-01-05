@@ -115,28 +115,53 @@ body {
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
-  height: 100%;
-  
+  color: aquamarine;
+  flex-flow: row wrap;
+}
+header, footer, main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    border-bottom: 1px #c49075 solid;
+    font-size: 1.2em;
+}
+
+main span {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.35em;
+}
+footer {
+    border-top: 1px #c49075 solid;
+}
+
+footer img {
+    padding-top: 20px;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: aquamarine;
   line-height: 1.5em;
-  font-size: 1em;
-  height: 500px;
+  font-size: .8em;
+  height: 350px;
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-indent: 1.5em;
 }
 
-.div-1, .div-2 {
-    border-right: 1px white solid;
-    padding-right: 20px
+.div-1 p, .div-2 p {
+    border-right: 1px #c49075 solid;
+    padding-right: 50px;
 }
-
 
 /* ==========================================================================
    Helper classes
